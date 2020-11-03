@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://fonts/info font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scenes/Calendar/TimeSlot.gd" type="Script" id=2]
+
+[node name="TimeSlot" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -724.0
+margin_bottom = -520.0
+rect_min_size = Vector2( 0, 80 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimeLabel" type="Label" parent="."]
+anchor_bottom = 1.0
+margin_right = 83.0
+margin_bottom = -46.0
+rect_min_size = Vector2( 100, 80 )
+custom_fonts/font = ExtResource( 1 )
+text = "12:00"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TaskLabel" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -200.0
+rect_min_size = Vector2( 100, 80 )
+custom_fonts/font = ExtResource( 1 )
+text = "Read Paper"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="currenLine" type="Line2D" parent="."]
+points = PoolVector2Array( 0, 2, 300, 2 )
+width = 3.0
+default_color = Color( 1, 0, 0.164706, 1 )
